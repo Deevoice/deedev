@@ -11,16 +11,16 @@ type HeaderProps = {
 const Header: FC<HeaderProps> = ({ isDarkTheme, toggleTheme }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const navLinks = [
-        { name: 'Проекты', href: '#projects' },
-        { name: 'Навыки', href: '#skills' },
-        { name: 'Контакты', href: '#contact' },
+        { name: 'ПРОЕКТЫ', href: '#projects' },
+        { name: 'НАВЫКИ', href: '#skills' },
+        { name: 'КОНТАКТЫ', href: '#contact' },
     ]
 
     return (
         <header className={`${styles.header} ${isDarkTheme ? styles.dark : ''}`}>
             <div className={styles.container}>
                 <Link href="/" className={styles.logo}>
-                    DevPortfolio
+                    DEE DEV
                 </Link>
 
                 <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ''}`}>

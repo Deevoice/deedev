@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 96vw;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -23,7 +23,7 @@
 
 .socialLinks {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .socialLink {
@@ -32,19 +32,25 @@
     transition: color 0.3s ease;
 }
 
-.socialLink:hover {
-    color: #2ecc71;
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
 }
 
 .footer.dark {
-    background: #1a1a1a;
+    background: #39375D;
     border-color: #333;
 }
 
 .dark .copyright {
-    color: #a0a0a0;
+    color: #D5CFE1;
 }
 
 .dark .socialLink {
     color: #ffffff;
+}
+
+.socialLink:hover {
+    color: #D5CFE1;
 }

@@ -2,9 +2,10 @@ import { FC, useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import styles from '@/components/Layout/Layout.module.css'
+import '@/styles/globals.css'
 
 const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [isDarkTheme, setIsDarkTheme] = useState(true) // Темная тема по умолчанию
+    const [isDarkTheme, setIsDarkTheme] = useState(true)
 
     const toggleTheme = () => {
         setIsDarkTheme(!isDarkTheme)
