@@ -1,33 +1,15 @@
-import { FC, useState } from 'react'
 import Link from 'next/link'
+import { FC, useState } from 'react'
+
 import styles from '@/styles/Header.module.css'
 
-type ThemeToggleProps = {
+type HeaderProps = {
     isDarkTheme: boolean
     toggleTheme: () => void
 }
 
-const ThemeToggle: FC<ThemeToggleProps> = ({ isDarkTheme, toggleTheme }) => {
-    return (
-        <button
-            onClick={toggleTheme}
-            className={styles.themeToggle}
-            aria-label="Переключить тему"
-        >
-            {isDarkTheme ? '🌞' : '🌙'}
-        </button>
-    )
-}
-
-const Header: FC = () => {
+const Header: FC<HeaderProps> = ({ isDarkTheme, toggleTheme }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [isDarkTheme, setIsDarkTheme] = useState(false)
-
-    const toggleTheme = () => {
-        setIsDarkTheme(!isDarkTheme)
-        document.documentElement.classList.toggle('dark-theme')
-    }
-
     const navLinks = [
         { name: 'Проекты', href: '#projects' },
         { name: 'Навыки', href: '#skills' },
@@ -52,10 +34,13 @@ const Header: FC = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <ThemeToggle
-                        isDarkTheme={isDarkTheme}
-                        toggleTheme={toggleTheme}
-                    />
+                    <button
+                        className={styles.themeToggle}
+                        onClick={toggleTheme}
+                        aria-label="Переключить тему"
+                    >
+                        {isDarkTheme ? '🌞' : '🌙'}
+                    </button>
                 </nav>
 
                 <button

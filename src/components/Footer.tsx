@@ -1,15 +1,20 @@
 import Link from 'next/link'
+import { FC } from 'react'
 import styles from '@/styles/Footer.module.css'
 
-const Footer = () => {
+type FooterProps = {
+    isDarkTheme?: boolean
+}
+
+const Footer: FC<FooterProps> = ({ isDarkTheme }) => {
     const currentYear = new Date().getFullYear()
 
     return (
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} ${isDarkTheme ? styles.dark : ''}`}>
             <div className={styles.container}>
                 <div className={styles.content}>
                     <p className={styles.copyright}>
-                        © {currentYear} dee-dev
+                        © {currentYear} DevPortfolio. Все права защищены.
                     </p>
                     <div className={styles.socialLinks}>
                         <Link
