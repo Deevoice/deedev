@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from './Footer.module.css'
+import styles from '@/styles/Footer.module.css'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
@@ -13,7 +13,7 @@ const Footer = () => {
                     </p>
                     <div className={styles.socialLinks}>
                         <Link
-                            href="https://github.com/Deevoice"
+                            href="https://github.com/deevoice"
                             target="_blank"
                             className={styles.socialLink}
                         >
@@ -25,9 +25,10 @@ const Footer = () => {
                             href="https://t.me/deevoice"
                             target="_blank"
                             className={styles.socialLink}
+                            aria-label="Telegram"
                         >
                             <svg className={styles.icon} viewBox="0 0 24 24">
-                                <path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z" />
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394a.75.75 0 01-.53.207l.213-3.05 5.56-5.022c.24-.213-.054-.334-.373-.12l-6.86 4.326-2.96-.924c-.643-.203-.658-.643.136-.95l11.57-4.458c.538-.196 1.006.128.832.941z" />
                             </svg>
                         </Link>
                     </div>

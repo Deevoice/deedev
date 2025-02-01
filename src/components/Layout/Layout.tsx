@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import styles from '@/Layout.module.css'
+import styles from '@/components/Layout/Layout.module.css'
 
 type LayoutProps = {
     children: ReactNode
