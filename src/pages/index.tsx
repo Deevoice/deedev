@@ -16,7 +16,10 @@ const Home: NextPage = () => {
 
             <Layout>
                 <div className={styles.container}>
-                    will work for food
+                    <div className={styles.mainPage}>
+                        <h1>HI, I'M DEE</h1>
+                        <h3>will work for food</h3>
+                    </div>
                     {/* <HeroSection />
                     <ProjectsSection />
                     <SkillsSection /> */}
