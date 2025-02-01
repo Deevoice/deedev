@@ -1,0 +1,55 @@
+.footer {
+    background: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socialLink {
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+    color: #2ecc71;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Dark theme */
+:global(.dark-theme) .footer {
+    background: #1a1a1a;
+}
+
+:global(.dark-theme) .copyright {
+    color: #a0a0a0;
+}
+
+:global(.dark-theme) .socialLink {
+    color: #ffffff;
+}

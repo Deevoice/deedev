@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #2ecc71;
+    --text-color: #2c3e50;
+    --bg-color: #ffffff;
+}
+
+.dark-theme {
+    --text-color: #ffffff;
+    --bg-color: #1a1a1a;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-height: 100%;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
